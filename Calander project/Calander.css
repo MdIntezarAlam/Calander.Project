@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+/* This is Wrapper Class */
+.wrapper{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #dfe6e9;
+}
+/* This is calander Class */
+.calander{
+    margin: auto;
+    width: 600px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+.calander h1{
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: green;
+}
+/* This is Month Class */
+.month{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    background-color: #2ecc71;
+    color: white;
+    padding: 40px 30px;
+}
+/* This is Weekends Class */
+.weekends{
+    display: flex;
+    background-color: #27ae60;
+    color: white;
+    padding: 7px 0px;
+}
+/* This is days Class */
+.days{
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 300;
+    padding: 10px 0;
+}
+/* This is days & div Class */
+.days div{
+    margin-bottom: 10px;
+    padding: 10px 0;
+    transition: all 0.4s;
+}
+/* Here Weekends and days are Combined */
+.weekends div,
+.days div{
+    width: 14.28%;
+    text-align: center;
+}
+.days div:hover{
+    background-color: #dfe6e9;
+    cursor: pointer;
+}
+/* This is Todaya Class */
+.today{
+    background-color: #27ae60;
+    color: #fff;
+}
+/* This is Prev_date Class */
+.prev_date{
+    color:#999;
+}
+/* This is Months Id */
+#months{
+    font-size: 30px;
+    font-weight: 500;
+}
+/* This is Pre And Next both are Combined class */
+.pre, .next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+/* This is Pre And Next both are Combined class */
+.pre:hover,
+.next:hover{
+    background-color: rgba(0, 0, 0,0.2);
+    cursor: pointer;
+}

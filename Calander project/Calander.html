@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clander Project</title>
+    <!-- Css Links -->
+    <link rel="stylesheet" href="Calander.css">
+    <!-- Javascript Links -->
+</head>
+
+<body onload="RenderDate()">
+    <div class="wrapper">
+        <div class="calander">   
+             <h1>This is Crated by Md Intezar Alam</h1>
+            <!-- Here is Month div -->
+            <div class="month">
+                <div class="pre" onclick="moveDate('prev')">
+                    <span>&#10094</span>
+                </div>
+                <div>
+                    <h2 id="months">June</h2>
+                <!-- This is id Is used For javaScript  -->
+                    <p id="date_str"></p>
+                </div>
+                <div class="next" onclick="moveDate('next')">
+                    <span>&#10095</span>
+                </div>
+            </div>
+            <!-- Here is End Month Div -->
+
+            <!-- From Here is Start Weekends -->
+            <div class="weekends">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <!-- Here is Ending Weekends -->
+
+       <!-- Here Start Days Div -->
+            <div class="days">
+ 
+            </div> 
+        </div>
+    </div>
+    <!-- Script Language -->
+    <script src="Calander.js"></script>
+</body>
+
+</html>
